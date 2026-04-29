@@ -1,7 +1,0 @@
-{
-	"name": "lgtr-plugin",
-	"version": "1.0.0",
-	"description": "Agent plugin providing the caveman ultra-compressed communication skill for GitHub Copilot.",
-	"skills": ".github/skills/",
-	"hooks": ".github/hooks/caveman-always.json"
-}

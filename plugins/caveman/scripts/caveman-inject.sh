@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # Injects caveman skill instructions as a system message at session start.
-# Reads the skill from the workspace and outputs a JSON systemMessage.
+# Reads the skill from the plugin install dir and outputs a JSON systemMessage.
 
-PLUGIN_DIR="${PLUGIN_ROOT:-${PWD}}"
-SKILL_FILE="${PLUGIN_DIR}/.github/skills/caveman/SKILL.md"
+PLUGIN_DIR="${CLAUDE_PLUGIN_ROOT:-$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)}"
+SKILL_FILE="${PLUGIN_DIR}/skills/caveman/SKILL.md"
 
 if [[ ! -f "$SKILL_FILE" ]]; then
   # Fallback: skill not found, do not block

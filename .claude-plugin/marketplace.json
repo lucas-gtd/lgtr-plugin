@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "lgtr-plugins",
+  "description": "Personal plugin marketplace by lucas-gtd for GitHub Copilot / Claude Code.",
+  "owner": {
+    "name": "lucas-gtd"
+  },
+  "metadata": {
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "caveman",
+      "source": "./plugins/caveman",
+      "description": "Ultra-compressed communication mode. Cuts token usage ~75% by speaking like caveman while keeping full technical accuracy.",
+      "version": "1.0.0",
+      "author": {
+        "name": "lucas-gtd"
+      },
+      "keywords": ["communication", "tokens", "brevity", "caveman"]
+    }
+  ]
+}
