@@ -2,7 +2,8 @@
 # Injects caveman skill instructions as a system message at session start.
 # Reads the skill from the workspace and outputs a JSON systemMessage.
 
-SKILL_FILE="${PWD}/.github/skills/caveman/SKILL.md"
+PLUGIN_DIR="${PLUGIN_ROOT:-${PWD}}"
+SKILL_FILE="${PLUGIN_DIR}/.github/skills/caveman/SKILL.md"
 
 if [[ ! -f "$SKILL_FILE" ]]; then
   # Fallback: skill not found, do not block

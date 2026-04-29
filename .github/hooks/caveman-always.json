@@ -3,7 +3,7 @@
     "SessionStart": [
       {
         "type": "command",
-        "command": ".github/hooks/scripts/caveman-inject.sh",
+        "command": "${PLUGIN_ROOT}/.github/hooks/scripts/caveman-inject.sh",
         "timeout": 10
       }
     ]
