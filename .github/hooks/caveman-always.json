@@ -1,0 +1,11 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": ".github/hooks/scripts/caveman-inject.sh",
+        "timeout": 10
+      }
+    ]
+  }
+}
